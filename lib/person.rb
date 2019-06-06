@@ -10,7 +10,7 @@ class Person
     @hygiene = 8
     @bank_account = 25
   end
-  
+
   def happiness=(num)
     @happiness = num
     @happiness = 10 if @happiness > 10
