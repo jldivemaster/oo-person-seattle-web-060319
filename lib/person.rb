@@ -1,16 +1,16 @@
 # your code goes here
 class Person
 
+  attr_reader :name, :happiness, :hygiene
+  attr_accessor :bank_account
+
   def initialize(name)
     @name = name
     @happiness = 8
     @hygiene = 8
     @bank_account = 25
   end
-
-  attr_reader :name, :happiness, :hygiene
-  attr_accessor :bank_account
-
+  
   def happiness=(num)
     @happiness = num
     @happiness = 10 if @happiness > 10
@@ -23,15 +23,7 @@ class Person
     @hygiene = 0 if @hygiene < 0
   end
 
-  def happiness=(range)
-    @happiness = range
-  end
-
-  def hygiene=(range)
-    @hygiene = range
-  end
-
-  def clean?(hygiene)
+  def clean?
     if hygiene > 7
       true
     else
@@ -39,7 +31,7 @@ class Person
     end
   end
 
-  def happy?(happiness)
+  def happy?
     if happiness > 7
       true
     else
