@@ -61,9 +61,12 @@ class Person
     self.happiness += 3
     friend.happiness += 3
 
+    "Hi Penelope! It's #{friend}. How are you?"
+
     if friend == "Felix"
       return "Hi Felix! It's Stella. How are you?"
     end
+    
   end
 
   def start_conversation(friend, topic)
