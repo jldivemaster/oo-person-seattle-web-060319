@@ -67,10 +67,12 @@ class Person
 
   def start_conversation(friend, topic)
     if topic == "politics"
-      #both get sadder
+      self.happiness -= 2
+      friend.happiness -= 2
       return "blah blah partisan blah lobbyist"
     elsif topic == "weather"
-      #both get lil happier
+      self.happiness += 2
+      friend.happiness += 2
       return "blah blah sun blah rain"
     else
       return "blah blah blah blah blah"
