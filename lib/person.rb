@@ -66,7 +66,6 @@ class Person
     if friend == "Felix"
       return "Hi Felix! It's Stella. How are you?"
     end
-
   end
 
   def start_conversation(friend, topic)
