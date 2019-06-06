@@ -11,12 +11,24 @@ class Person
   attr_reader :name, :happiness, :hygiene
   attr_accessor :bank_account
 
-  def happiness=(0..10)
-    @happiness = (0..10)
+  def happiness=(num)
+    @happiness = num
+    @happiness = 10 if @happiness > 10
+    @happiness = 0 if @happiness < 0
   end
 
-  def hygiene=(0..10)
-    @hygiene = (0..10)
+  def hygiene=(num)
+    @hygiene = num
+    @hygiene = 10 if @hygiene > 10
+    @hygiene = 0 if @hygiene < 0
+  end
+
+  def happiness=(range)
+    @happiness = range
+  end
+
+  def hygiene=(range)
+    @hygiene = range
   end
 
   def clean?(hygiene)
