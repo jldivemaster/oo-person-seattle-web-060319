@@ -40,25 +40,25 @@ class Person
   end
 
   def get_paid(salary)
-    bank_account += salary
+    self.bank_account += salary
     return "all about the benjamins"
   end
 
   def take_bath
-    hygiene += 4
+    self.hygiene += 4
     return "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
 
   def work_out
-    hygiene -= 3
-    happiness += 2
+    self.hygiene -= 3
+    self.happiness += 2
     return "♪ another one bites the dust ♫"
 
   end
 
   def call_friend(friend)
-    happiness += 3
+    self.happiness += 3
 
     if friend == "Felix"
       return "Hi Felix! It's Stella. How are you?"
